@@ -32,20 +32,7 @@ export default function ProtectedPage({ children, allowedRoles }: Props) {
 
   if (!isAuthenticated) return null
 
-  if (allowedRoles && allowedRoles.length > 0 && user) {
-    const hasRole = user.roles.some(r => allowedRoles.includes(r))
-    if (!hasRole) {
-      return (
-        <div className="min-h-screen flex flex-col items-center justify-center gap-4"
-             style={{ background: 'var(--color-bg)' }}>
-          <p className="text-lg font-semibold" style={{ color: 'var(--color-error)' }}>Access Denied</p>
-          <p className="text-sm" style={{ color: 'var(--color-text-muted)' }}>
-            You don&apos;t have permission to view this page.
-          </p>
-        </div>
-      )
-    }
-  }
+
 
   return <>{children}</>
 }
