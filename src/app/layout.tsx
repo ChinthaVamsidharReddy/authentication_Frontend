@@ -27,8 +27,8 @@ const dmMono = DM_Mono({
 })
 
 export const metadata: Metadata = {
-  title: { default: 'SkillBridge', template: '%s | SkillBridge' },
-  description: 'AI-powered platform bridging students, skills, and recruiters',
+  title: { default: 'Authentication ', template: '%s | Authentication ' },
+  description: 'Built with JWT, Google & GitHub OAuth, email verification, and secure session',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
