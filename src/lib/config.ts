@@ -1,7 +1,7 @@
 // Central config — NEXT_PUBLIC_ vars are inlined by Next.js at build time
 
 export const API_URL =
-  process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api'
+  process.env.NEXT_PUBLIC_API_URL || 'https://authentication-backend-qqf8.onrender.com/api'
 
 // Spring Security OAuth2 authorization endpoint.
 // IMPORTANT: Because server.servlet.context-path=/api,
