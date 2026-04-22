@@ -1,7 +1,7 @@
 import axios, { AxiosError, InternalAxiosRequestConfig } from 'axios'
 import Cookies from 'js-cookie'
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api'
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://authentication-backend-qqf8.onrender.com/api'
 
 export const apiClient = axios.create({
   baseURL: API_URL,
