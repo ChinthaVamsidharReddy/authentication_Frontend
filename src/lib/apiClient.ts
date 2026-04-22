@@ -6,7 +6,6 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://authentication-backe
 export const apiClient = axios.create({
   baseURL: API_URL,
   headers: { 'Content-Type': 'application/json' },
-  timeout: 15000,
 })
 
 // ── Request Interceptor: attach access token ─────────────────
